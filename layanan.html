@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="font/css/all.min.css">
+    <title>Klinik Ananda</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixeed-top">
+      <a class="navbar-brand" href="#">Admin | <b> Klinik Ananda </b></a>   
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <div class="icon ml-4">
+          <h5>
+            <i class="fa-solid fa-envelope mr-3" data-toggle="tooltip" title="Surat Masuk"></i>
+            <i class="fa-solid fa-bell mr-3" data-toggle="tooltip" title="Notifikasi"></i>
+            <i class="fa-solid fa-right-from-bracket mr-3" data-toggle="tooltip" title="Sign Out"></i>
+          </h5>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row no-gutters">
+      <div class="col-md-2 bg-dark pr-3 pt-4">
+        <ul class="nav flex-column ml-3 mb-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="dashboard.html"><i class="fa-solid fa-gauge mr-3"></i>Dashboard</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="booking.html"><i class="fa-solid fa-book mr-3"></i>Daftar Booking</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="dokter.html"><i class="fa-solid fa-user-doctor mr-3"></i>Daftar Dokter</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pegawai.html"><i class="fa-solid fa-user-nurse mr-3"></i>Daftar Pegawai</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="layanan.html"><i class="fa-brands fa-product-hunt mr-3"></i>Produk/Layanan</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="jadwal.html"><i class="fa-solid fa-calendar-days mr-3"></i></i>Jadwal Praktik</a><hr class="bg-secondary">
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10 p-5 pt-2">
+       <h3><i class="fa-brands fa-product-hunt mr-3"></i>Layanan</h3><hr>
+
+       <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Layanan</th>
+            <th scope="col">Deskripsi</th>
+            <th scope="col">Dokter/Spesialis</th>
+            <th scope="col">Estimasi Biaya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pemeriksaan Gigi Rutin </td>
+            <td>Pemeriksaan kesehatan gigi secara menyeluruh, dan mendeteksi kerusakan pada gigi</td>
+            <td>Semua Dokter Gigi</td>
+            <td>100.000-150.000</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Penambalan Gigi</td>
+            <td>Penambalan gigi berlubang </td>
+            <td>Drg.Kaff Abdillah</td>
+            <td>300.000-500.000</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pembersihan Gigi (Scalling) </td>
+            <td>Pembersihan karang gigi dan plak untuk mencegah penyakit gusi dan kerusakan gigi</td>
+            <td>Drg.Cinta Melati</td>
+            <td>100.000-150.000</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Konsultasi Gigi </td>
+            <td>Konsultasi untu mendiskusikan perawatan gigi yang dibutuhkan</td>
+            <td>Semua Dokter Gigi</td>
+            <td>100.000-200.000</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Ortodonti (Kawat Gigi) </td>
+            <td>Pemasangan kawat gigi untuk merapikan susunan gigi dan memperbaiki gigitan</td>
+            <td>Drg.Kaff Abidillah</td>
+            <td>5.000.000-15.000.000</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Pemeriksaan X-Ray Gigi</td>
+            <td>Pemeriksaan rontgen untuk mendeteksi masalah dalam gigi yang tidak terlihat secara langsung</td>
+            <td>Drg.Intan Febriyanti</td>
+            <td>250.000-400.000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+    </div>
+    <div class="container-fluid copyright-section text-center">
+      <p class="p-0">Develop By Mahasiswa STT-NF<a href="#"></a>@2024</p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

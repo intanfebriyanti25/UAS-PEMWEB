@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Dentist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="teeth-whitening.svg" type="image/png">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.8s ease-in-out; }
+        .gradient-bg { background: linear-gradient(90deg, #4f46e5, #3b82f6); }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="gradient-bg shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6 text-white">
+            <h1 class="text-xl font-bold">Sigma Dentist - Depok</h1>
+            <div class="flex space-x-4">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#layanan" class="hover:underline">Layanan</a>
+                <a href="boking.html" target="_blank" class="hover:underline">Booking</a>
+                <a href="#testimoni" class="hover:underline">Testimoni</a>
+                <a href="#tentang-kami" class="hover:underline">Tentang Kami</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search" class="border rounded-lg px-4 py-2 text-sm">
+                <a href="#login" class="hover:underline">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Link Akses Cepat Section -->
+    <aside class="bg-gray-100 rounded-lg shadow-md p-4 ml-4 mt-4 border border-gray-200">
+        <h3 class="text-lg font-bold text-blue-600 mb-4">Link Akses Cepat</h3>
+        <ul class="space-y-2">
+            <li>
+                <a href="#layanan" class="block text-blue-500 hover:underline text-sm font-medium">
+                    Layanan
+                </a>
+            </li>
+            <li>
+                <a href="#jadwal" class="block text-blue-500 hover:underline text-sm font-medium">
+                    Jadwal
+                </a>
+            </li>
+            <li>
+                <a href="#dokter-kami" class="block text-blue-500 hover:underline text-sm font-medium">
+                    Dokter Kami
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-6 px-6">
+        <!-- Welcome Section -->
+        <section id="home" class="bg-white rounded-lg shadow-md p-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4 text-blue-600">Sigma Dentist</h2>
+            <p class="text-gray-700 mb-4">Kami menyediakan layanan terbaik untuk kesehatan gigi Anda dengan tenaga profesional terpercaya.</p>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-blue-100 to-white rounded-lg p-4">
+                    <h3 class="font-bold text-blue-600 mb-2">Layanan</h3>
+                    <p class="text-gray-600">Detail tentang layanan klinik kami.</p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-100 to-white rounded-lg p-4">
+                    <h3 class="font-bold text-blue-600 mb-2">Jadwal Praktik</h3>
+                    <p class="text-gray-600">Informasi jadwal dokter yang tersedia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="dokter-kami" class="mt-6 fade-in">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Daftar Dokter Gigi Kami</h2>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-4 text-center transform hover:scale-105 transition duration-300">
+                    <img src="sofyan.jpeg" alt="Drg. Aby Sofyan" class="w-24 h-24 mx-auto rounded-full">
+                    <h3 class="font-bold mt-4">Drg. Aby Sofyan</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 text-center transform hover:scale-105 transition duration-300">
+                    <img src="cinta.jpeg" alt="Drg. Cinta Melati" class="w-24 h-24 mx-auto rounded-full">
+                    <h3 class="font-bold mt-4">Drg. Cinta Melati</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 text-center transform hover:scale-105 transition duration-300">
+                    <img src="intan.jpeg" alt="Drg. Intan Febriyanti" class="w-24 h-24 mx-auto rounded-full">
+                    <h3 class="font-bold mt-4">Drg. Intan Febriyanti</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 text-center transform hover:scale-105 transition duration-300">
+                    <img src="kap.png" alt="Drg. Kaff Abidillah" class="w-24 h-24 mx-auto rounded-full">
+                    <h3 class="font-bold mt-4">Drg. Kaff Abidillah</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="jadwal" class="mt-6 bg-white rounded-lg shadow-md p-6 fade-in">
+            <div class="flex space-x-6">
+                <div class="w-1/4">
+                    <img src="kap.png" alt="Drg. Kaff Abidillah" class="w-full h-48 rounded-lg">
+                    <h3 class="text-center font-bold mt-4">Drg. Kaff Abidillah</h3>
+                </div>
+                <div class="w-3/4">
+                    <h2 class="text-xl font-bold mb-4 text-blue-600">Drg. Kaff Abidillah</h2>
+                    <h3 class="text-lg font-bold mb-2">Jadwal Praktik</h3>
+                    <table class="w-full border border-gray-300 text-left">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border px-4 py-2">No</th>
+                                <th class="border px-4 py-2">Hari</th>
+                                <th class="border px-4 py-2">Jam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">1</td>
+                                <td class="border px-4 py-2">Senin</td>
+                                <td class="border px-4 py-2">18:30 - 21:00</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="border px-4 py-2">2</td>
+                                <td class="border px-4 py-2">Rabu</td>
+                                <td class="border px-4 py-2">09:00 - 12:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section id="layanan" class="mt-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md p-6 fade-in">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Layanan</h2>
+            <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="flex-1 bg-white p-4 rounded-lg shadow transform hover:translate-y-1 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Perawatan Gigi Anak</h3>
+                    <p class="text-sm text-gray-700 mb-2">Kerusakan gigi seperti gigi berlubang adalah salah satu permasalahan umum yang dialami anak-anak.</p>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-lg shadow mt-4 md:mt-0 transform hover:translate-y-1 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Perawatan Ortodenti</h3>
+                    <p class="text-sm text-gray-700 mb-2">Ortodonti bertujuan mengoreksi posisi gigi menggunakan alat ortho cekat atau lepas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section id="testimoni" class="mt-6 bg-white rounded-lg shadow-md p-6 fade-in">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Testimoni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <p class="italic text-gray-600">&ldquo;Pelayanan sangat baik, dokter sangat ramah dan profesional. Klinik yang sangat saya rekomendasikan!&rdquo;</p>
+                    <h4 class="font-bold mt-4 text-blue-600">- Ani Setiawan</h4>
+                </div>
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <p class="italic text-gray-600">&ldquo;Dokter gigi di sini sangat sabar dengan anak-anak. Anak saya jadi tidak takut lagi untuk periksa gigi.&rdquo;</p>
+                    <h4 class="font-bold mt-4 text-blue-600">- Budi Tri</h4>
+                </div>
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <p class="italic text-gray-600">&ldquo;Klinik ini benar-benar terbaik! Hasil perawatan saya sangat memuaskan, dan suasana klinik sangat nyaman.&rdquo;</p>
+                    <h4 class="font-bold mt-4 text-blue-600">- Carla Rachman</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="tentang-kami" class="mt-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md p-6 fade-in">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Tentang Kami</h2>
+            <p class="text-gray-700 mb-4">Klinik Kesehatan Gigi Ananda adalah pusat layanan kesehatan gigi terpercaya yang berlokasi di Depok. Kami berdedikasi untuk memberikan pelayanan terbaik dengan tim profesional yang berpengalaman di bidang kesehatan gigi.</p>
+            <p class="text-gray-700 mb-4">Dengan fasilitas modern dan suasana yang nyaman, kami berkomitmen untuk memberikan pengalaman terbaik bagi pasien kami. Klinik kami melayani berbagai kebutuhan, mulai dari pemeriksaan rutin hingga perawatan kompleks, termasuk ortodonsi dan implan gigi.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold text-blue-600 mb-2">Visi</h3>
+                    <p class="text-gray-600">Menjadi klinik gigi pilihan utama yang memberikan pelayanan kesehatan gigi terbaik di Indonesia.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-blue-600 mb-2">Misi</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Menyediakan layanan kesehatan gigi yang berkualitas dengan teknologi terkini.</li>
+                        <li>Mengedepankan kenyamanan dan keamanan pasien.</li>
+                        <li>Meningkatkan edukasi masyarakat tentang pentingnya kesehatan gigi.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white text-center py-4 mt-8">
+        <p>Develop by Mahasiswa STT-NF @2025</p>
+    </footer>
+</body>
+</html>
